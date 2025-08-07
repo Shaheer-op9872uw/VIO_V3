@@ -1,0 +1,19 @@
+# ─── CONFIGURATION FOR VIO PREPROCESSING ───
+
+dataset:
+  name: "wikitext"
+  subset: "wikitext-103-v1"
+  split: "train"
+  text_column: "text"
+
+tokenizer:
+  model_name: "bert-base-uncased"
+  max_length: 512
+  truncation: true
+  padding: "max_length"
+  return_tensors: "pt"
+
+dataloader:
+  batch_size: 16
+  shuffle: true
+  num_workers: 2

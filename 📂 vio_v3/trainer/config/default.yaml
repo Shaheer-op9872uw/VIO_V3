@@ -1,0 +1,37 @@
+# =========================
+# Default config for VIOv3
+# =========================
+
+model:
+  name: "VIOv3"
+  hidden_dim: 512
+  depth: 6
+  dropout: 0.1
+  use_pos_encoding: true
+  pretrained: false
+  ckpt_path: null  # path to pretrained weights if available
+
+train:
+  batch_size: 32
+  epochs: 20
+  lr: 3e-4
+  weight_decay: 1e-2
+  optimizer: "adamw"
+  scheduler: "linear"
+  gradient_clip: 1.0
+  save_path: "./checkpoints"
+
+eval:
+  batch_size: 64
+  ckpt_path: "./checkpoints/best_model.pt"
+
+inference:
+  max_length: 128
+  temperature: 0.7
+  top_k: 50
+  top_p: 0.95
+  repetition_penalty: 1.2
+
+device:
+  use_gpu: true
+  gpu_id: 0
