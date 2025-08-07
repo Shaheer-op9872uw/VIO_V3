@@ -127,7 +127,7 @@ VIO v3 is stable. Polish in progress.
 Keep an eye out for future versions: VIO v4 (multi-modal), VIO Lite (mobile deploy), and VIO-X (???).
 
 💬 Feedback? Suggestions?
-Open an issue or reach out on X/Twitter (Coming soon)
+Open an issue or reach out on gmail: shaheeroffical.ra@gmail.com  OR shaheer2010 on discord.
 Let’s build the future — one clean model at a time.
 
 ---
